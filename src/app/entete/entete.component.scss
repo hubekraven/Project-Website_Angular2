@@ -1,0 +1,219 @@
+.section-entete {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+}
+
+.caroussel {
+    position: absolute;
+    height: 80%;
+    width: 100%;
+}
+
+.ht-entete-down {
+    width: 100%;
+    height: 100vh;
+    transition: height 0.5s;
+    transition-delay: .2s;
+    overflow: hidden;
+    position: relative;
+    .ht-iconeslogo {
+        display: none;
+    }
+}
+
+.ht-entete-up {
+    top: 0px;
+    height: 0vh;
+    transition: height 0.5s;
+    transition-delay: .2s;
+}
+
+//---------------------Logo Svg----------------------------------------//
+.ht-iconeslogo {
+    width: 12%;
+    margin-top: 5px;
+    margin-left: 0px;
+    fill: #000000;
+    left: 50px;
+}
+
+.ht-iconeslogo:hover {
+    fill: #e5c76c;
+    transition: fill, 0.3s;
+    cursor: pointer;
+}
+
+svg {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+}
+
+svg {
+    fill: #f1f1f1;
+}
+
+svg > rect {
+    -webkit-mask: url(#mask);
+    mask: url(#mask);
+}
+
+//**********FIN SVG**********//
+//************************CROSSFADE**************************//
+.crossfade {
+    overflow: hidden;
+}
+
+.crossfade > figure {
+    animation: imageAnimation 30s linear infinite 0s;
+    backface-visibility: hidden;
+    background-size: cover;
+    background-position: center center;
+    color: transparent;
+    height: 650px;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.crossfade > figure:nth-child(1) {
+    background-image: url('../../assets/img/001.png');
+}
+
+.crossfade > figure:nth-child(2) {
+    animation-delay: 6s;
+    background-image: url('../../assets/img/002.png');
+}
+
+.crossfade > figure:nth-child(3) {
+    animation-delay: 12s;
+    background-image: url('../../assets/img/003.png');
+}
+
+.crossfade > figure:nth-child(4) {
+    animation-delay: 18s;
+    background-image: url('../../assets/img/004.png');
+}
+
+.crossfade > figure:nth-child(5) {
+    animation-delay: 24s;
+    background-image: url('../../assets/img/005.png');
+}
+
+@keyframes imageAnimation {
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    8% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+        //transform: scale();
+    }
+    17% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    25% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+}
+
+//*********FIN CROSSFADE***********//
+@media (max-width: 991px) {
+    .section-entete {
+        width: 100%;
+        height: 5vh;
+        .crossfade {
+            // display: none;    
+        }
+    }
+    .ht-iconeslogo {
+        margin-top: 5px;
+        width: 10%;
+        height: 70%;
+        fill: black;
+        top: 21px;
+    }
+    /* z-index: 1; */
+    .ht-hamburgerbutton {
+        top: 15px;
+    }
+    .crossfade > figure {
+        max-height: 400px;
+        max-width: 30%;
+        background-size: contain;
+        background-position: center center;
+        top: 0%;
+        left: 0%;
+        opacity: 0;
+        top: 0px;
+        top: -25px;
+    }
+    .ht-menubar {
+        position: fixed;
+        top: -25px;
+    }
+}
+
+@media (max-width: 767px) {
+    .section-entete {
+        width: 100%;
+        height: 5vh;
+        .crossfade {
+            display: none;
+        }
+    }
+    svg {
+        display: none;
+    }
+    .ht-iconeslogo {
+        margin-top: 5px;
+        width: 5%;
+        height: 50%;
+        fill: black;
+        top: 21px;
+    }
+    .crossfade > figure {
+        display: none;
+    }
+    .ht-menubar {
+        position: relative;
+        top: -25px;
+    }
+}
+
+@media (max-width: 479px) {
+    .section-entete {
+        width: 100%;
+        height: 5vh;
+        overflow: hidden;
+        .crossfade {
+            display: none;
+        }
+    }
+    svg {
+        display: none;
+    }
+    .crossfade > figure {
+        display: none;
+    }
+    .ht-iconeslogo {
+        margin-top: 5px;
+        width: 5%;
+        height: 20%;
+        fill: black;
+        top: 21px;
+    }
+}

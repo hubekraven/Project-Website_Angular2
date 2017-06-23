@@ -1,0 +1,28 @@
+@import '~@angular/material/core/theming/prebuilt/deeppurple-amber.scss';
+body {
+    padding:  0px;
+    margin:  0px;
+    font-family: Roboto,Helvetica Neue,sans-serif;
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+/* You can add global styles to this file, and also import other style files */
+.flex
+{
+    display: flex;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.row
+{
+    flex-direction: row;
+}
+
+
+a:visited, a:active, a{
+    text-decoration: none;
+}

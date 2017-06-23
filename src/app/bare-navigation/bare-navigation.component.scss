@@ -1,0 +1,65 @@
+.ht-competence{
+    
+    min-height: 800px;
+    
+}
+
+.bare-navigation {
+  display: -webkit-box;
+  display: -webkit-flex;
+    flex-direction: row;
+  display: -ms-flexbox;
+  position: fixed;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    width: 100%;
+    top: 0vh;
+    height: 10vh;
+  -webkit-box-pack: center;
+  //-webkit-justify-content: center;
+  -ms-flex-pack: center;
+  //justify-content: center;
+  background-color: #f1f1f1;
+    z-index:1000;
+    
+ 
+}
+/**********************************************/
+.ht-iconeslogo{
+        //margin-left: 15px;
+    img{
+       //fill :aqua; 
+        width: 100%;
+        height: 100%;
+    }
+}
+//---------------------Logo Svg----------------------------------------//
+.ht-iconeslogo{
+    
+    width: 12%;
+    margin-top: 5px; 
+    margin-left: 0px;
+}
+.ht-iconeslogo:hover{
+   fill:#e5c76c ;
+   transition: fill, 0.3s;
+    cursor: pointer;
+}
+
+    //************************SVG**************************//
+.ht-navlink {
+  /*height: 60px;
+  padding-top: 18px;
+  padding-bottom: 18px;*/
+    color: #444;
+  font-family: Ubuntu, Helvetica, sans-serif;
+    font-size: 1.1em;
+  font-weight: 100;
+}
+
+.ht-navlink:active, .ht-navlink:active:before {
+  color: #eb9c03;
+}
+.w-nav-link.w--current {
+    color: #0082f3;
+}

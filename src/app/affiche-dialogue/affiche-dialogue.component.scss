@@ -1,0 +1,13 @@
+.conteneur {
+    text-align: center;
+    justify-content: space-around;
+    .message {
+        flex: auto;
+        font-family: monospace;
+        font-size: 1.2em;
+    }
+    .actions button:hover {
+        color: #ffffff;
+        background-color: #85E6CC;
+    }
+}

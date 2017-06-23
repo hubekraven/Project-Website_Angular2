@@ -1,0 +1,139 @@
+.mat-card {
+    /*box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    transition: box-shadow 280ms cubic-bezier(.4,0,.2,1);
+    will-change: box-shadow;
+    display: block;
+    position: relative;*/
+    padding: 10px;
+    border-radius: 2px;
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+    //height: 400px;
+    //width: 250px;
+     background-color:#484848;
+    margin: 10px;
+    overflow: hidden;
+}
+.example-card{
+    width: 300px;
+    height: 300px;
+    
+}
+.contenuText{
+    
+    padding-top: 20px;
+    
+}
+.carteProjet,
+.carteProjet*{
+    box-sizing: border-box;
+    position: relative;
+	display: inline-block;
+	overflow: hidden;
+    margin-top: 10px;
+   
+	max-width: 50%;
+	height: auto;
+}
+
+.carteImage{
+    max-width: 100%;
+    //position: relative;
+}
+
+.carteProjet .carteImage {
+	display: block;
+    
+}
+.carteProjet .carteInfo {
+	opacity: 0;
+	position: absolute;
+	top:220px;
+	left: 0;
+	//right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.9);
+	color: #fff;
+	padding: 15px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+    //z-index: 1;
+}
+.carteProjet:hover .carteInfo,
+.carteProjet.active .carteInfo {
+	opacity: 1;
+}
+
+.carteProjet .carteSlideUp {
+	-moz-transform: translateY(10%);
+	-webkit-transform: translateY(10%);
+	-ms-transform: translateY(10%);
+	transform: translateY(10%);
+}
+.carteTexte {
+	//text-align: center;
+	font-size: 16px;
+    color:burlywood;
+	/*-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);*/
+}
+
+.carteTexte-cartetitre {
+	//text-align: center;
+	font-size: 32px;
+    color:#fff;
+	/*-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);*/
+}
+
+.carteProjet:hover .carteSlideUp,
+.hvrbox.active .carteSlideUp {
+	-moz-transform: translateY(0);
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	transform: translateY(0);
+}
+.carteInfo {
+    overflow: hidden;
+    text-align: center;
+    //font-size: 20px;
+    //max-width: 300px;
+    //margin:0px 25px;
+    //display: none;
+   // z-index: 1;
+    //position: relative;
+    //top:100px;*/
+    
+   // position: absolute;
+//overflow: hidden;
+//clip: rect(0 0 0 0);
+//height: 1px; width: 1px;
+//margin: -1px; padding: 0;
+//border: 0;
+    
+}
+.imageProjet{
+   // z-index: 0;
+    //position: absolute;
+    
+}
+/*.carteProjet:hover{
+    md-card-header {
+        display: block;
+        
+    }
+    
+  
+}
+*/  
+
+
+
+

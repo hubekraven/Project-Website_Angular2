@@ -1,0 +1,30 @@
+<Section *ngIf="projet" class=" ht-hauteurMin">
+    <h1> Projets</h1>
+    <article class="ht-section-detailprojet" id="{{projet.id_projet}}">
+        <div class="detailprojet-images">
+            <div *ngFor="let media of projet.medias">
+                <img *ngIf="media.type ==='image'" src="{{media.url_media}}" class="carteImage">
+                <video *ngIf=" media.type === 'video'"  poster="" class="background-video"  width='500' height='360' controls>
+                    <source src="{{media.url_media}}" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="ht-section-blocTexte">
+            <h2 class="heading">{{projet.titre}}</h2>
+            <br/>
+            <strong class="heading">Categorie: </strong>{{projet.categorie}}
+            <br/>
+            <i class="heading-3">{{projet.annee}}</i>
+            <br/>
+            <div class="ligne"></div>
+            <p class="ht-section-paragraphe">{{projet.description}}</p>
+            <a *ngIf="projet.link_externe" href="{{projet.link_externe}}" target="_blank">visiter en ligne</a>
+            <br/>
+            <strong class="heading">Technologies: </strong>{{projet.technologie}}
+            <br/>
+
+            <md-icon> <a routerLink="/projets">return</a></md-icon>
+        </div>
+    </article>
+
+</Section>

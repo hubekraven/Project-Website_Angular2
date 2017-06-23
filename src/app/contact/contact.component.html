@@ -1,0 +1,31 @@
+<!--app-bare-navigation></app-bare-navigation-->
+<section class="sectionContact ht-hauteurMin">
+    <h1>Contactez-moi</h1>
+
+    <div class="ht-section-blocTexte ">
+        <header class="entete">
+            Vous avez un projet et j'ai ce que vous recherchez? Contactez-moi.
+        </header>
+        <p class="ht-sectionContact-paragraphe">
+            Travailler avec des personnes qui partagent la même passion pour produire quelque chose qui a de la valeur, voici ce qui fait ma journée.
+            <a class="email-adress">hubefox@gmail.com</a>
+        </p>
+
+    </div>
+    <form #contactForm=ngForm class="ht-ContactFormulaire">
+        <md-input-container class="nom">
+            <input mdInput placeholder="Votre nom" ngControl="nom" type="text" name="nom" [(ngModel)]="nom" required #_nom/>
+        </md-input-container>
+
+        <md-input-container class="courriel">
+            <input mdInput placeholder="Votre courriel" ngControl="courriel" type="email" name="courriel" [(ngModel)]="courriel" required #_courriel/>
+        </md-input-container>
+        <md-input-container class="message">
+            <textarea mdInput placeholder="Votre message" ngControl="message" [(ngModel)]="message" name="message" rows="3" cols="50" ng-minlength="10" required #_message>
+            </textarea>
+        </md-input-container>
+        <section class="actions">
+            <button md-button (click)="soumettreContact()" [disabled]="!contactForm.form.valid">ENVOYER</button>
+        </section>
+    </form>
+</section>

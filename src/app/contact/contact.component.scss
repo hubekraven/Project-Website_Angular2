@@ -1,0 +1,56 @@
+.sectionContact {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: lato, cursive;
+    font-size: 14px;
+}
+
+.ht-ContactFormulaire {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-width: 40vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: -10px;
+    margin-left: 55px;
+    h1 {
+        margin-bottom: -30px;
+    }
+}
+
+.ht-sectionContact-paragraphe {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    padding-right: 5px;
+    padding-left: 5px;
+    text-align: justify;
+}
+
+.ht-sectionContact-paragraphe,
+.entete {
+    max-width: 100%;
+}
+
+.entete {
+    font-style: italic;
+    font-size: 1.4em;
+    font-weight: 100;
+    color: #646464;
+    padding-bottom: 16px;
+}

@@ -1,0 +1,31 @@
+.section-apropos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    background-color: #e5c76c;
+}
+
+.aproposArticle {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: stretch;
+    padding-top: 30px;
+
+}
+
+.aproposImage {
+    width: 200px;
+    -webkit-border-radius: 90px;
+    -moz-border-radius: 90px;
+    border-radius: 100px;
+}
+.contenuText{
+    padding-top: 30px;
+    font-size: 1.1em;
+    font-style:italic;
+    text-align: justify;
+}

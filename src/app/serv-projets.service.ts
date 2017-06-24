@@ -12,7 +12,7 @@ import {Projet} from './projet';
 export class ServProjetsService {
     //route vers le service
     //url:string = "http://127.0.0.1:8000/webservice/php_huberson";
-	url:string = "http://hubefox.info/php_portfolio";
+	url:string = "https://hubefox.info/php_portfolio";
     
     constructor(private http:Http) { 
     }
